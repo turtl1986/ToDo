@@ -1,0 +1,43 @@
+{
+  "name": "fe-107",
+  "version": "1.0.0",
+  "description": "Basic JS",
+  "main": "index.js",
+  "lint-staged": {
+    "*.{js}": "npx eslint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint-staged"
+    }
+  },
+  "scripts": {
+    "lint": "npx eslint \"./\" --quiet",
+    "lint:fix": "npx eslint \"./\" --fix",
+    "format": "prettier --write ./",
+    "prepare": "husky install",
+    "lint-staged": "lint-staged"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FE-107/FE-107.git"
+  },
+  "keywords": [],
+  "author": "TeachMeSkills",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FE-107/FE-107/issues"
+  },
+  "homepage": "https://github.com/FE-107/FE-107#readme",
+  "devDependencies": {
+    "eslint": "^8.44.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^16.0.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "husky": "^8.0.0",
+    "prettier": "^2.8.8"
+  }
+}
